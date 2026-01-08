@@ -1,5 +1,5 @@
-
-function allSubStrings (str) {
+// Time Complexity: O(n2);
+function allSubStrings(str) {
     for (let i = 0; i < str.length; i++) {
         let result = "";
 
