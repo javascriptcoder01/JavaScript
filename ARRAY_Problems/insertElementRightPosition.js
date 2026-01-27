@@ -5,7 +5,6 @@ let value = 4;
 for (let i = arr.length - 1; i >= 0; i--) {    // 3
 
     if (arr[i] > value) {                   // 5 > 4 --> shift element
-
         arr[i + 1] = arr[i];
     } else {                            // 5 < 4  --> insert the element
         arr[i + 1] = value;
