@@ -16,6 +16,7 @@ let obj = {
 };
 
 let obj1 = JSON.parse(JSON.stringify(obj));
+// console.log("Data: ", obj1);
 obj1.address.city = "Mumbai";
 console.log(obj.address.city);  // Output: Bareilly
 
@@ -26,7 +27,7 @@ let obj2 = {
     address: {
         city: "Mumbai",
     },
-    arr: [1,3,4,6],
+    arr: [1, 3, 4, 6],
 };
 
 let obj3 = structuredClone(obj2);

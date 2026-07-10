@@ -1,17 +1,19 @@
 
-function rightRotation (arr, position) {
+function rightRotation(arr, position) {
     let l = arr.length;
 
-    position = position % l; // In case position is greater than array length
+    position = position % l;  // In case position is greater than array length
 
     for (let i = 0; i < position; i++) {
-        let lastElelement = arr[l - 1];
+
+        let lastElelement = arr[l - 1];  // Pick last element
 
         for (let j = l - 1; j > 0; j--) {
-            arr[j] = arr[j - 1];
+
+            arr[j] = arr[j - 1];  // Make last just --> previous element
         }
 
-        arr[0] = lastElelement;
+        arr[0] = lastElelement;  // Now shift last element into first element
     }
 
     return arr;
