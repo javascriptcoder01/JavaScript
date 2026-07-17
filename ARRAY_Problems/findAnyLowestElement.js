@@ -1,9 +1,11 @@
-// Find Any Lowest Element In An Array O(n * k)
+// Find Any Lowest Element In An Array 
+// Time Complexity: O(n * k)
+// Space Complexity: O(1)
 
-function findAnyLowestElement (arr, position) {
+function findAnyLowestElement(arr, position) {
     let lowest;
 
-    for (let i =1; i <= position; i++) {
+    for (let i = 1; i <= position; i++) {
         lowest = Infinity;
         // Find current lowest number
         for (let j = 0; j < arr.length; j++) {
@@ -21,4 +23,4 @@ function findAnyLowestElement (arr, position) {
     return lowest;
 }
 
-console.log(findAnyLowestElement([12,4,13,6,10,14], 3));
+console.log(findAnyLowestElement([12, 4, 13, 6, 10, 14], 3));
