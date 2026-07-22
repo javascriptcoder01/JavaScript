@@ -1,4 +1,5 @@
-
+// Time Complexity = O(n2)
+// Space Complexity = O(1)
 
 function selectionSort(arr) {
 
